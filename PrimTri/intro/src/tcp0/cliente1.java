@@ -13,7 +13,7 @@ public class cliente1 {
     public static void main(String[] args) {
 
         try{
-            String Host = "localhost";
+            String Host = "10.101.21.222";
             int Puerto = 6000;
 
             Socket Cliente = new Socket(Host, Puerto);
