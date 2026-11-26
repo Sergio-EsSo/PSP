@@ -16,7 +16,7 @@ public class Cliente0 {
         String msg = "";
 
         while (!msg.trim().equals("quit")) {
-            byte[] buf = new byte[1000];
+            byte[] buf = new byte[1024];
             // Recibe el paquete
             DatagramPacket paq = new DatagramPacket(buf, buf.length);
             ms.receive(paq);
