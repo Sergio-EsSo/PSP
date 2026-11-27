@@ -1,12 +1,16 @@
 package tcp0;
 
-public class Persona {
+import java.io.Serializable;
 
+@SuppressWarnings("serial")
+public class Persona implements Serializable {
+
+    private static final long serialVersionUID = 1L;
     private String nombre;
     private int edad;
 
-    public Persona(){
-    }
+    public Persona(){}
+
     public Persona(String nom, int ed){
         this.nombre = nom;
         this.edad = ed;
